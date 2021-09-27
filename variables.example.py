@@ -1,0 +1,3 @@
+API_PREFIX = ''
+BOT_TOKEN = ''
+CHAT_ID = ''
