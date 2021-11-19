@@ -16,7 +16,7 @@ def merge_requests() -> str:
         message = {
             "chat_id": variables.CHAT_ID,
             "text": f"""
-            *** Merge request na área! :) ***
+            *** Evento de merge request na área! Ação: {data['object_attributes']['action'].upper()}***
             De: {data['user']['name']},
             Nome do projeto: {data['object_attributes']['source']['name']},
             Nome da branch: {data['object_attributes']['source_branch']},
@@ -26,7 +26,7 @@ def merge_requests() -> str:
             Link: {data['object_attributes']['url']}
          """,
         }
-
+Migs116076808
     except Exception as e:
         message = {
             "chat_id": variables.CHAT_ID,
