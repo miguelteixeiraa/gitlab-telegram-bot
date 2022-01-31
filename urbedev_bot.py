@@ -26,7 +26,6 @@ def merge_requests() -> str:
             Link: {data['object_attributes']['url']}
          """,
         }
-Migs116076808
     except Exception as e:
         message = {
             "chat_id": variables.CHAT_ID,
